@@ -1,15 +1,15 @@
 {
-    "name": "mongodb-connection-app",
-    "version": "1.0.0",
-    "description": "A simple Node.js app to connect to MongoDB and send requests",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "dotenv": "^16.0.0",
-      "express": "^4.17.1",
-      "mongoose": "^6.3.3"
-    }
+  "name": "mongodb-connection-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app to connect to MongoDB and send requests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.3.3"
   }
-  
+}

@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors'); // Import cors
 require('dotenv').config();
 
 const app = express();
@@ -7,6 +8,11 @@ const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+
+// Enable CORS for all origins
+app.use(cors({
+  origin: '*' // Allow all origins. You can restrict this to specific domains for security.
+}));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
